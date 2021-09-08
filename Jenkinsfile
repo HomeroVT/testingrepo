@@ -5,6 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building in DEVELOP..'
+                pwd
+                ls -ltrha
             }
         }
         stage('Test') {
